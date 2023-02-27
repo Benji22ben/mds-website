@@ -2,6 +2,7 @@
 import { defineComponent } from 'vue';
 import Title from './Title.vue';
 import Button from './Button.vue';
+import WrapPictures from './WrapPictures.vue';
 </script>
 
 <script lang="ts">
@@ -35,6 +36,7 @@ export default defineComponent({
     <div class="flex flex-col items-center justify-center gap-12">
         <Title>La meilleure école des <br> métiers du digital</Title>
         <Button class="font-bold">Appelez-nous</Button>
+        <WrapPictures :pictures="pictures" />
     </div>
 </template>
 

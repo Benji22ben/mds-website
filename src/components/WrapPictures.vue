@@ -15,8 +15,8 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="flex flex-row gap-6">
-        <Picture v-for="(picture, index) in pictures" :src="picture.path" :alt="picture.alt" class="w-1/3"
-            :class="index == 0 || index == 3 ? 'mt-4' : ''" />
+    <div class="flex flex-row gap-10 justify-center items-center">
+        <Picture v-for="(picture, index) in pictures" :src="picture.path" :alt="picture.alt" class=" w-48"
+            :class="index == 1 || index == 2 ? ' mt-32' : ''" />
     </div>
 </template>
