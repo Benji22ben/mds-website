@@ -1,21 +1,16 @@
 <script setup lang="ts">
 import { PropType, defineComponent } from 'vue'
-import Campus from './Campus.vue';
+import Title from './Title.vue';
 </script>
 
 <script lang="ts">
 export default defineComponent({
-  name: 'CampusSection',
-  components: {
-    Campus
-  },
-  props: {
-    campusFrance: Array as PropType<{ path: string; studentsNumber: number }[]>,
-  }
+  name: 'BlogSection',
 })
 </script>
 
 <template>
-    <h3 class="font-bold text-mds-blue text-center mt-24 text-2xl">Des campus partout en France</h3>
-    <Campus :campus-france="campusFrance" />
+    <div class="bg-mds-navyBlue w-full p-20">
+        <h2 class="font-bold text-white text-center text-4xl">MyDigitalSchool, c’est aussi <br> un blog avec des conseils</h2>
+    </div>
 </template>

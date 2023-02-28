@@ -14,8 +14,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="p-20 flex flex-col justify-center gap-36">
-    <Header />
+  <main class="flex flex-col justify-center gap-36">
+    <Header class="p-20" />
 
     <Body />
   </main>
