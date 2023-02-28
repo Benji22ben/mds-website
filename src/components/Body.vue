@@ -2,21 +2,22 @@
 import { defineComponent } from 'vue';
 import Link from '../types/Link'
 import PicturesSection from './PicturesSection.vue';
-import TitleSection from  './TitleSection.vue'
+import TitleSection from './TitleSection.vue'
 import CampusSection from './CampusSection.vue';
 import CardsSection from './CardsSection.vue';
 import BlogSection from './BlogSection.vue';
+import AlumnisSection from './AlumnisSection.vue';
 </script>
 
 <script lang="ts">
 export default defineComponent({
     components: {
-    TitleSection,
-    PicturesSection,
-    CampusSection,
-    CardsSection,
-    BlogSection
-},
+        TitleSection,
+        PicturesSection,
+        CampusSection,
+        CardsSection,
+        BlogSection
+    },
     data() {
         return {
             pictures: [
@@ -112,7 +113,8 @@ export default defineComponent({
         <PicturesSection :pictures="pictures" />
         <CampusSection :campus-france="campusFrance" />
         <CardsSection class="px-20" :cards="cards" />
-        <BlogSection />
+        <BlogSection class="p-20" />
+        <AlumnisSection class="p-20" />
     </div>
 </template>
 

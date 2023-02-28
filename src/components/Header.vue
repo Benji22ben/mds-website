@@ -7,6 +7,7 @@ import Button from './Button.vue'
 
 <script lang="ts">
 export default defineComponent({
+    name: 'Header',
     data() {
         return {
             links: [
@@ -36,11 +37,11 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="flex flex-row items-center justify-between">
+    <header class="flex flex-row items-center justify-between">
         <img src="/logo-mds.svg" alt="">
         <Nav :links="this.links"></Nav>
         <div class=" border-l-mds-gray border-solid border-l-2 pl-96"><Button>M'inscrire</Button></div>
-    </div>
+    </header>
 </template>
 
 

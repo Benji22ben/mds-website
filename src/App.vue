@@ -2,13 +2,15 @@
 import { defineComponent } from 'vue';
 import Header from './components/Header.vue'
 import Body from './components/Body.vue'
+import Footer from './components/Footer.vue';
 </script>
 
 <script lang="ts">
 export default defineComponent({
   components: {
     Header,
-    Body
+    Body,
+    Footer
   },
 })
 </script>
@@ -18,5 +20,7 @@ export default defineComponent({
     <Header class="p-20" />
 
     <Body />
+
+    <Footer />
   </main>
 </template>
