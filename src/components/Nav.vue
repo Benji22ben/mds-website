@@ -17,7 +17,7 @@ export default defineComponent({
 
 <template>
   <nav class="flex flex-row gap-6">
-    <a :class="link.selected ? 'font-bold text-mds-black' : 'text-mds-gray'" class="text-small font-bold" v-for="link in links"><router-link
+    <a :class="link.selected ? 'font-bold text-mds-black' : 'text-mds-gray'" class="text-small font-bold hover:cursor-pointer" v-for="link in links"><router-link
         :to="link.path">{{ link.name }}</router-link></a>
   </nav>
 </template>

@@ -5,7 +5,10 @@ import Picture from './Picture.vue';
 
 <script lang="ts">
 export default defineComponent({
-    name: 'PicturesWrap',
+    name: 'PicturesSection',
+    components: {
+        Picture
+    },
     props: {
         pictures: {
             type: Array as PropType<{ path: string; alt: string }[]>
